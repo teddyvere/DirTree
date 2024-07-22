@@ -31,7 +31,7 @@
         "kind": 2,
         "importPath": "test.foo.dtg",
         "description": "test.foo.dtg",
-        "peekOfCode": "def main():\n    # Check if directory path is provided via command-line arguments, else prompt the user for input\n    if len(sys.argv) > 1:\n        root_dir = sys.argv[1]\n    else:\n        root_dir = input(\"Enter the path to the directory: \")\n    # Check if provided path is a directory\n    if not os.path.isdir(root_dir):\n        print(f\"The path '{root_dir}' is not a valid directory.\")\n        return",
+        "peekOfCode": "def main():\n    # Check if directory path is provided via command-line arguments, else prompt the user for input\n    if len(sys.argv) > 1:\n        root_dir = sys.argv[1]\n    else:\n        root_dir = \"/Users/teddy/Documents/GitHub/Week4/DirTree/test\"\n    # Check if provided path is a directory\n    if not os.path.isdir(root_dir):\n        print(f\"The path '{root_dir}' is not a valid directory.\")\n        return",
         "detail": "test.foo.dtg",
         "documentation": {}
     }

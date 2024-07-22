@@ -31,7 +31,7 @@ def main():
     if len(sys.argv) > 1:
         root_dir = sys.argv[1]
     else:
-        root_dir = input("Enter the path to the directory: ")
+        root_dir = "/Users/teddy/Documents/GitHub/Week4/DirTree/test"
     
     # Check if provided path is a directory
     if not os.path.isdir(root_dir):
