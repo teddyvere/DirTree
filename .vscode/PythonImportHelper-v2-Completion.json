@@ -1,0 +1,38 @@
+[
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "generate_directory_tree",
+        "kind": 2,
+        "importPath": "test.foo.dtg",
+        "description": "test.foo.dtg",
+        "peekOfCode": "def generate_directory_tree(root_dir, prefix=\"\"):\n    \"\"\"\n    Recursively generate the directory tree structure.\n    :param root_dir: The root directory to traverse.\n    :param prefix: The prefix string used for indentation in the tree.\n    \"\"\"\n    # List all the files and directories in the root dir\n    entries = os.listdir(root_dir)\n    entries.sort()  # Sort the entries to have a consistent order\n    # Iterate through the list of entries and print",
+        "detail": "test.foo.dtg",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "test.foo.dtg",
+        "description": "test.foo.dtg",
+        "peekOfCode": "def main():\n    # Check if directory path is provided via command-line arguments, else prompt the user for input\n    if len(sys.argv) > 1:\n        root_dir = sys.argv[1]\n    else:\n        root_dir = input(\"Enter the path to the directory: \")\n    # Check if provided path is a directory\n    if not os.path.isdir(root_dir):\n        print(f\"The path '{root_dir}' is not a valid directory.\")\n        return",
+        "detail": "test.foo.dtg",
+        "documentation": {}
+    }
+]
